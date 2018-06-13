@@ -52,6 +52,7 @@ The following is all open data obtained via `LOSC <https://losc.ligo.org/>`_
 
     In [8]: for ax in plot.axes:
        ...:     ax.set_xlim(gps - 0.15, gps + 0.05)
+       ...:     ax.add_legend()
        ...:     ax.set_epoch(gps)
        ...:     ax.set_xlabel('Time [milliseconds]')
        ...:     ax.set_ylim(20, 500)
